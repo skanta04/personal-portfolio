@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
+    margin: -10px;
 }
 
 header {
@@ -35,27 +36,72 @@ header li a {
     font-family: 'Courier Prime', monospace;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.github-button,
+.linkedin-button {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.github-button {
+    background-color: #4078c0; 
+}
+
+.linkedin-button {
+    background-color: #0077b5; 
+}
+
+.github-button:hover,
+.linkedin-button:hover {
+    background-color: #305f90; 
+}
+
 .content-2 {
     grid-column: 1/2;
     grid-row: 2/3;
     margin-left: -10px;
     margin-right: -10px;
     padding: 7%;
-    padding-top: 3%;
-    background-color: #bcdcf7;
-    height: 75vh;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background: linear-gradient(to bottom, #bcdcf7, #ffffff);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
     
 }
 
 .content-2 #hi {
     color: #fe01cb;
-    font-size: 1.4vw;
+    font-size: 20px;
     font-family: 'Courier Prime', monospace;
 
 }
 
 .content-2 h1 {
-    font-size: 5vw;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content-2 #prof {
+    font-size: 25px;
+    
 }
 
 .content-2 #about {
@@ -77,7 +123,9 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 2vw;            
+  font-family: 'Courier Prime', monospace;
+  font-size: 20px;     
+  font-weight: bold;       
 }
 
 .scrollIcon {
@@ -102,18 +150,131 @@ a {
   }
 }
 
-.experiences {
+.about {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 5%;
+}
+.image-container img {
+    height: 300px;
+    border-radius: 100%;
+}
+ 
+.about h1 {
+    font-size: 40px;
+}
+
+.about p {
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-weight: lighter;
+}
+
+.exp {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.exp-one {
+    grid-column: 1/2;
+    grid-row: 5/6;
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-rows: auto 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+ }
+
+ .exp-two {
+    grid-column: 1/2;
+    grid-row: 6/7;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto auto auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+ }
+
+ .exp-three {
+    grid-column: 1/2;
+    grid-row: 7/8;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto auto auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+ }
+
+.position {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-size: 1.6em; 
 }
 
-.experiences h1 {
-    grid-template-columns: span 2;
-    grid-row: 1/2;
-    text-align: center;
+.date {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    color: #777; 
+    font-size: 1.2em;
+
 }
 
+.location {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-style: italic; 
+    font-size: 1.2em;
+    margin-top: -8px;
 
 
+}
 
+.responsibilities {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    list-style-type: none;
+    padding-left: 0; 
+    font-size: 1.2em;
+    font-weight: lighter;
+     
+}
+
+.responsibilities li {
+    margin-bottom: 8px; 
+    line-height: 1.4;
+}
+
+.lab-link:hover {
+    background-color: rgba(200, 200, 200, 0.5); 
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    padding-right: 10px;
+}
+
+.lab-image {
+    max-width: 20%;
+    height: auto;
+    margin-right: 10px; 
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.lab-text {
+    font-weight: bold;
+    color: black; 
+}
